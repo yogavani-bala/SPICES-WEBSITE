@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+background-color: #000;
+
+}
+section{
+    width: 100%;
+    height: 100%;
+    
+}
+section .homein{
+     width: 100%;
+    height: 100vh;
+    background-image: url(Images/main5.jfif);
+    background-size: cover;
+background-position: center;
+}
+section .homein::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #FFA500;
+    background:black;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+section nav .logo{
+display: flex;
+}
+section nav .logo h3{
+    color: #FFA500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin: 24px 0;
+
+}
+
+section nav .logo img{
+    width: 80px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color:white;
+}
+
+section nav li a:hover{
+    color: #FFA500;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+section .main h1 span{
+    color: #FFA500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+section .main p{
+    width: 650px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    line-height: 28px;
+    word-spacing: 5px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_tag .main_btn{
+    background: #FFA500;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img{
+    width: 780px;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+
+
+
+/*services*/
+
+ section .services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+section .services .services_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .services .services_box .services_card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px #FFA500;
+    padding: 15px 10px;
+}
+
+section .services .services_box .services_card i{
+    color: #FFA500;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+section .services .services_box .services_card p{
+    color: white;
+}
+section .services .services_box .services_card h3{
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+
+/*about*/
+
+section .about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .about .about_image img{
+    width: 600px;
+}
+
+section .about .about_tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+    color: white;
+}
+
+section .about .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: white;
+}
+
+section .about .about_tag .about_btn{
+    padding: 10px 20px;
+    background: #FFA500;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+/*Books*/
+
+.featured_pro{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured_pro h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+    color: #FFA500;
+}
+
+.featured_pro .featured_pro_box{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.featured_pro .featured_pro_box .featured_pro_card{
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.featured_pro .featured_pro_box .featured_pro_card:hover{
+    box-shadow: 0 0 5px #FFA500;
+    
+}
+
+.featured_pro .featured_pro_box .featured_pro_card .featured_pro_img img{
+    width: 170px;
+    height: 170px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+
+}
+.featured_pro .featured_pro_box .featured_pro_card .featured_pro_img img:hover{
+    transform: scale(1.1);
+}
+
+.featured_pro .featured_pro_box .featured_pro_card .featured_pro_tag h2{
+    margin: 15px;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+.featured_pro .featured_pro_box .featured_pro_card .featured_pro_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid #FFA500;
+    text-decoration: none;
+    color:white;
+}
+
+::-webkit-scrollbar{  
+    width: 20px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FFA500;
+    border-radius: 10px;
+ }  
+
+
+
+
+/*arrivals*/
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+}
+
+.arrivals h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #FFA500;
+    margin-top: 35px;
+}
+
+.arrivals .arrivals_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card{
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+    box-shadow: 0 0 5px #FFA500;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+    color: #FFA500;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid #FFA500;
+    text-decoration: none;
+    color:white;
+}
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background: #eaeaea;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: #FFA500;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #FFA500;
+    margin-left: 10px;
+}
